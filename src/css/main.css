@@ -1,0 +1,41 @@
+html {
+    width: 100%;
+    height: 100%;
+}
+
+/*Body*/
+
+body {
+    font-family: 'Lato', sans-serif;
+    height: 100%;
+    width: 100%;
+}
+
+/*Main*/
+
+.main {
+    width: 100%;
+    height: 100%;
+}
+.main_menu .new_game {
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+}
+
+/*Section play */
+
+.game_container {
+    height: 100%;
+    width: 100%;
+}
+.play {
+    text-align: center;
+}
+
+/*Footer*/
+
+.footer {
+    text-align: center;
+    padding: 10px;
+}

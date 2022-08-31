@@ -9,6 +9,7 @@ body {
     font-family: 'Lato', sans-serif;
     height: 100%;
     width: 100%;
+    background-color: aliceblue;
 }
 
 /*Main*/
@@ -18,19 +19,60 @@ body {
     height: 100%;
 }
 .main_menu .new_game {
+    position: absolute;
     width: 100%;
     text-align: center;
     padding: 15px;
 }
 
-/*Section play */
+/*Game container */
 
 .game_container {
     height: 100%;
     width: 100%;
 }
+.columns {
+    margin: 0;
+}
+.game_container .player_one {
+    background-color: #ECF0F1;
+}
+.game_container .player_two {
+    background-color: #BDC3C7;
+}
 .play {
+    padding-top: 100px;
     text-align: center;
+}
+.game_container .play .player_name {
+    height: 64px;
+}
+.game_container .play .temporary_score {
+    height: 64px;
+}
+.game_container .play .current_score {
+    height: 64px;
+}
+
+/*Game control*/
+
+.play_dice {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 15%;
+}
+.play_roll {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 30%;
+}
+.play_hold {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 35%;
 }
 
 /*Footer*/

@@ -27,6 +27,10 @@ body {
 
 /*Game container */
 
+
+.dice_button {
+    padding: 0;
+}
 .game_container {
     height: 100%;
     width: 100%;

@@ -1,9 +1,9 @@
-let images = ["dice1.png",
-"dice2.png",
-"dice3.png",
-"dice4.png",
-"dice5.png",
-"dice6.png"];
+let images = ["dice1.svg",
+"dice2.svg",
+"dice3.svg",
+"dice4.svg",
+"dice5.svg",
+"dice6.svg"];
 
 let dice = document.querySelectorAll("img");
 
@@ -16,7 +16,7 @@ function roll(){
             die.classList.remove("shake");
         });
         let dieOneValue = Math.floor(Math.random()
-        *6);
+        * (7 - 1) + 1);
         console.log(dieOneValue);
         document.querySelector("#die-1").setAttribute("src", images[dieOneValue]);
     },

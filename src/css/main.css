@@ -30,6 +30,27 @@ body {
 
 .dice_button {
     padding: 0;
+    border: none;
+    background: none;
+}
+.dice_img{
+    width: 64px;
+    height: 64px;
+    background: white;
+}
+.shake{
+    animation: shake 0.5s infinite;
+}
+@keyframes shake{
+    0%{
+        transform: rotate(8deg);
+    }
+    50%{
+        transform: rotate(-8deg);
+    }
+    100%{
+        transform: rotate(8deg);
+    }
 }
 .game_container {
     height: 100%;

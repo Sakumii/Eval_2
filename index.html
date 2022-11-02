@@ -32,16 +32,16 @@
                 <section class="column play player_one">
                     
                     <h2 class="player_name">Player 1</h2>
-                    <p class="temporary_score">Temporary score</p>
-                    <p class="current_score">Current score</p>
+                    <p class="temporary_score" id="total_p1">Temporary score</p>
+                    <p class="current_score" id="score_p1">Current score</p>
 
-                </section>
+                </section> 
 
                 <section class=" column play player_two">
                     
                     <h2 class="player_name">Player 2</h2>
-                    <p class="temporary_score">Temporary score</p>
-                    <p class="current_score">Current score</p>
+                    <p class="temporary_score" id="total_p2">Temporary score</p>
+                    <p class="current_score" id="score_p2">Current score</p>
 
                 </section>
             </section>
@@ -49,12 +49,12 @@
             <!--Game control-->
 
                 <section class=" play_dice">
-                    <button class="button is-white dice_button is-large">
-                            <img src="src/img/dice_1.png">
+                    <button class="dice_button">
+                            <img src="src/img/dice-1_1.png" class="dice_img" id="die-1">
                     </button>
                 </section>
                 <section class="play_roll">
-                    <button class="button is-white">
+                    <button onclick="roll()" class="button is-white">
                         <i>
                             <svg style="width:24px;height:24px" viewBox="0 0 24 24">
                                 <path fill="currentColor" d="M2 12C2 16.97 6.03 21 11 21C13.39 21 15.68 20.06 17.4 18.4L15.9 16.9C14.63 18.25 12.86 19 11 19C4.76 19 1.64 11.46 6.05 7.05C10.46 2.64 18 5.77 18 12H15L19 16H19.1L23 12H20C20 7.03 15.97 3 11 3C6.03 3 2 7.03 2 12Z" />
@@ -80,6 +80,6 @@
             <p>2022</p>
         </footer>
         
-        <script src="src/js/main.js" async defer></script>
+        <script src="src/js/dice.js" async defer></script>
     </body>
 </html>

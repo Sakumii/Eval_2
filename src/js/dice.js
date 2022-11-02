@@ -1,9 +1,9 @@
-let images = ["dice1-1.png",
-"dice_2.png",
-"dice_3.png",
-"dice_4.png",
-"dice_5.png",
-"dice_6.png"];
+let images = ["dice1.png",
+"dice2.png",
+"dice3.png",
+"dice4.png",
+"dice5.png",
+"dice6.png"];
 
 let dice = document.querySelectorAll("img");
 
@@ -18,6 +18,7 @@ function roll(){
         let dieOneValue = Math.floor(Math.random()
         *6);
         console.log(dieOneValue);
+        document.querySelector("#die-1").setAttribute("src", images[dieOneValue]);
     },
     1000
     );

@@ -19,7 +19,7 @@
 
         <main class="main main_menu">
             <div class="new_game" >
-                <button class="button is-white ng_button">
+                <button class="button is-white ng_button" id="new_game">
                     <svg style="width:24px;height:24px" viewBox="0 0 24 24">
                         <path fill="currentColor" d="M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M13,7H11V11H7V13H11V17H13V13H17V11H13V7Z" />
                     </svg>
@@ -31,7 +31,7 @@
             <section class="columns game_container">
                 <section class="column play player_one">
                     
-                    <h2 class="player_name" id="player_1">Player 1</h2>
+                    <h2 class="player_name" id="player_1">PLAYER 1 <img class="active dot" src="images/dot.png" alt="Green Dot Icon Png - Green Online Dot Png@pngkey.com"></h2>
                     <p class="temporary_score" id="round_p1"></p>
                     <p class="current_score" id="global_p1">Current score</p>
 
@@ -39,7 +39,7 @@
 
                 <section class=" column play player_two">
                     
-                    <h2 class="player_name" id="player_2">Player 2</h2>
+                    <h2 class="player_name" id="player_2">PLAYER 2 <img class="dot hide" src="images/dot.png" alt="Green Dot Icon Png - Green Online Dot Png@pngkey.com"></h2>
                     <p class="temporary_score" id="round_p2"></p>
                     <p class="current_score" id="global_p2">Current score</p>
 
@@ -81,5 +81,7 @@
         </footer>
         
         <script src="src/js/dice.js" async defer></script>
+        <script src="src/js/new_game.js"></script>
+        <script src="src/js/players.js"></script>
     </body>
 </html>

@@ -24,6 +24,12 @@ body {
     text-align: center;
     padding: 15px;
 }
+.dot {
+    height: 10px;
+}
+.dot.hide{
+    display: none;
+}
 
 
 /*Dice*/

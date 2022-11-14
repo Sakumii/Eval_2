@@ -19,7 +19,7 @@
 
         <main class="main main_menu">
             <div class="new_game" >
-                <button class="button is-white ng_button">
+                <button class="button is-white ng_button" id="new_game">
                     <svg style="width:24px;height:24px" viewBox="0 0 24 24">
                         <path fill="currentColor" d="M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M13,7H11V11H7V13H11V17H13V13H17V11H13V7Z" />
                     </svg>
@@ -31,36 +31,30 @@
             <section class="columns game_container">
                 <section class="column play player_one">
                     
-                    <h2 class="player_name">Player 1</h2>
-                    <p class="temporary_score">Temporary score</p>
-                    <p class="current_score">Current score</p>
+                    <h2 class="player_name" id="player_1">PLAYER 1 <img class="active dot" src="images/dot.png" alt="Green Dot Icon Png - Green Online Dot Png@pngkey.com"></h2>
+                    <p class="temporary_score" id="round_p1"></p>
+                    <p class="current_score" id="global_p1">Current score</p>
 
-                </section>
+                </section> 
 
                 <section class=" column play player_two">
                     
-                    <h2 class="player_name">Player 2</h2>
-                    <p class="temporary_score">Temporary score</p>
-                    <p class="current_score">Current score</p>
+                    <h2 class="player_name" id="player_2">PLAYER 2 <img class="dot hide" src="images/dot.png" alt="Green Dot Icon Png - Green Online Dot Png@pngkey.com"></h2>
+                    <p class="temporary_score" id="round_p2"></p>
+                    <p class="current_score" id="global_p2">Current score</p>
 
                 </section>
             </section>
 
             <!--Game control-->
 
-                <section class=" play_dice">
-                    <button class="button is-white is-medium">
-                        <span class="icon is-medium">
-                            <i class="fas fa-heading fa-2x">
-                    <svg style="width:64px;height:64px" viewBox="0 0 24 24">
-                        <path fill="currentColor" d="M19 5V19H5V5H19M19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3M7.5 6C6.7 6 6 6.7 6 7.5S6.7 9 7.5 9 9 8.3 9 7.5 8.3 6 7.5 6M16.5 15C15.7 15 15 15.7 15 16.5C15 17.3 15.7 18 16.5 18C17.3 18 18 17.3 18 16.5C18 15.7 17.3 15 16.5 15M16.5 6C15.7 6 15 6.7 15 7.5S15.7 9 16.5 9C17.3 9 18 8.3 18 7.5S17.3 6 16.5 6M12 10.5C11.2 10.5 10.5 11.2 10.5 12S11.2 13.5 12 13.5 13.5 12.8 13.5 12 12.8 10.5 12 10.5M7.5 15C6.7 15 6 15.7 6 16.5C6 17.3 6.7 18 7.5 18S9 17.3 9 16.5C9 15.7 8.3 15 7.5 15Z" />
-                    </svg>
-                            </i>
-                        </span>
+                <section class="play_dice">
+                    <button class="dice_button">
+                            <img src="images/dice-01.svg" class="dice_img" id="die-1">
                     </button>
                 </section>
                 <section class="play_roll">
-                    <button class="button is-white">
+                    <button onclick="roll()" class="button is-white">
                         <i>
                             <svg style="width:24px;height:24px" viewBox="0 0 24 24">
                                 <path fill="currentColor" d="M2 12C2 16.97 6.03 21 11 21C13.39 21 15.68 20.06 17.4 18.4L15.9 16.9C14.63 18.25 12.86 19 11 19C4.76 19 1.64 11.46 6.05 7.05C10.46 2.64 18 5.77 18 12H15L19 16H19.1L23 12H20C20 7.03 15.97 3 11 3C6.03 3 2 7.03 2 12Z" />
@@ -86,6 +80,8 @@
             <p>2022</p>
         </footer>
         
-        <script src="src/js/main.js" async defer></script>
+        <script src="src/js/dice.js" async defer></script>
+        <script src="src/js/new_game.js"></script>
+        <script src="src/js/players.js"></script>
     </body>
 </html>

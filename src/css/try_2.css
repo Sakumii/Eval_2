@@ -1,6 +1,11 @@
 
 /*Global*/
 
+html {
+    height: 100%;
+    width: 100%;
+}
+
 body {
     font-family: 'Lato', sans-serif;
     height: 100%;
@@ -22,7 +27,7 @@ body {
     transform: translateX(-60%);
     color: #555;
     font-family: Lato;
-    font-size: 15px;
+    font-size: 17px;
     text-transform: uppercase;
     cursor: pointer;
     font-weight: 300;
@@ -44,17 +49,16 @@ button:hover i {
     padding: 15px;
     top: 25px;
 }
-.roll-button {top: 30%;}
+.roll-button {top: 38.5%;}
 
-.hold-button {top: 35%;}
+.hold-button {top: 42.5%;}
 
 /*Dice*/
 
 .dice-img {
-    width: 64px;
-    height: 64px;
+    width: 100px;
     position: absolute;
-    top: 130px;
+    top: 160px;
     left: 50%;
     translate: -70%;
 }
@@ -76,7 +80,7 @@ button:hover i {
     background-color: #4682B4;
     color: aliceblue;
     width: 15%;
-    height: 75px;
+    height: auto;
     margin: 0 auto;
     padding: 12px;
     text-align: center;
@@ -86,10 +90,12 @@ button:hover i {
     margin-bottom: 10px;
     font-size: 12px;
 }
+.current-score {
+    font-size: 25px;
+}
 
 
 /*Player Section*/
-
     
 .columns{
     height: 100%;
@@ -98,9 +104,20 @@ button:hover i {
     text-align: center;
     width: 50%;
     float: left;
-    height: 800px;
+    height: 100%;
     padding: 100px 0 0 0;
 }
 .active {
     background-color: #B0C4DE;
+}
+.player-name {
+    text-transform: uppercase;
+    padding: 15px;
+    font-size: 40px;
+    height: 65px;
+    
+}
+.player-score{
+    height: 200px;
+    font-size: 60px;
 }

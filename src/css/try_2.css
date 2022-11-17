@@ -1,16 +1,15 @@
 
 /*Global*/
 
-html {
-    width: 100%;
-    height: 100%;
-}
-
 body {
     font-family: 'Lato', sans-serif;
     height: 100%;
     width: 100%;
     background-color: aliceblue;
+}
+.wrapper{
+    width: 100%;
+    height: 100%;
 }
 
 /*Button*/
@@ -20,15 +19,27 @@ body {
     position: absolute;
     width: 200px;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-60%);
     color: #555;
     font-family: Lato;
     font-size: 15px;
     text-transform: uppercase;
     cursor: pointer;
     font-weight: 300;
+    background: none;
+    border : 0;
     transition: background-color 0.3s, color 0.3s;
 }
+
+button:hover { 
+    font-weight: 600;
+    border : 0;
+}
+
+button:hover i { 
+    margin-right: 20px;
+}
+
 .ng-button {
     padding: 15px;
     top: 25px;
@@ -44,7 +55,36 @@ body {
     height: 64px;
     position: absolute;
     top: 130px;
-    left: 47.6%;
+    left: 50%;
+    translate: -70%;
+}
+@keyframes shake{
+    0%{
+        transform: rotate(8deg);
+    }
+    50%{
+        transform: rotate(-8deg);
+    }
+    100%{
+        transform: rotate(8deg);
+    }
+}
+
+/*Current box*/
+
+.current-box{
+    background-color: #4682B4;
+    color: aliceblue;
+    width: 15%;
+    height: 75px;
+    margin: 0 auto;
+    padding: 12px;
+    text-align: center;
+}
+.current-label {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-size: 12px;
 }
 
 
@@ -60,4 +100,7 @@ body {
     float: left;
     height: 800px;
     padding: 100px 0 0 0;
+}
+.active {
+    background-color: #B0C4DE;
 }

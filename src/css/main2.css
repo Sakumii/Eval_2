@@ -62,17 +62,7 @@ button:hover i {
     left: 50%;
     translate: -70%;
 }
-@keyframes shake{
-    0%{
-        transform: rotate(8deg);
-    }
-    50%{
-        transform: rotate(-8deg);
-    }
-    100%{
-        transform: rotate(8deg);
-    }
-}
+
 
 /*Current box*/
 
@@ -109,6 +99,11 @@ button:hover i {
 }
 .active {
     background-color: #B0C4DE;
+}
+.active .player-name::after {
+    content: "\2022";
+    font-size: 47px;
+    color: #4682B4;
 }
 .player-name {
     text-transform: uppercase;

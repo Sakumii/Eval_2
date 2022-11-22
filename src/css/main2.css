@@ -10,7 +10,7 @@ body {
     font-family: 'Lato', sans-serif;
     height: 100%;
     width: 100%;
-    background-color: aliceblue;
+    background-color: white;
 }
 .wrapper{
     width: 100%;
@@ -67,8 +67,7 @@ button:hover i {
 /*Current box*/
 
 .current-box{
-    background-color: #4682B4;
-    color: aliceblue;
+    background-color: #EF4444;
     width: 15%;
     height: auto;
     margin: 0 auto;
@@ -79,9 +78,11 @@ button:hover i {
     text-transform: uppercase;
     margin-bottom: 10px;
     font-size: 12px;
+    color: black;
 }
 .current-score {
     font-size: 25px;
+    color: white;
 }
 
 
@@ -98,12 +99,12 @@ button:hover i {
     padding: 100px 0 0 0;
 }
 .active {
-    background-color: #B0C4DE;
+    background-color: #F5F5F5;
 }
 .active .player-name::after {
     content: "\2022";
     font-size: 47px;
-    color: #4682B4;
+    color: #EF4444;
 }
 .player-name {
     text-transform: uppercase;
@@ -115,4 +116,5 @@ button:hover i {
 .player-score{
     height: 200px;
     font-size: 60px;
+    color: #EF4444;
 }
